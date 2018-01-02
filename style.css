@@ -8,10 +8,14 @@ body {
 
 /* HEADER */
 header {
+  margin-top: -50px;
+  position: fixed;
   width: 100vw;
   height: 100px;
   background-color: red;
   text-align: center;
+  z-index: 9999;
+
 }
 
 nav {
@@ -47,19 +51,40 @@ nav > ul > li > a {
 
 
 .jumbotron {
+  margin-top: 50px;
   border-radius: 0px;
   height: 400px;
   background-color: grey;
 }
 
-.jumbotron > h1, p {
+.jumbotron > h1, .jumbotron > p {
   text-align: center;
   weight: bold;
+  color: white;
+}
+
+
+/* === LEIPÄTEKSTIT === */
+
+section {
+  width: 60vw;
+  margin: 0 auto;
+  text-align: left;
+}
+
+hr {
+  width: 40vw;
+  margin: 150px auto;
 }
 
 h1 {
-  padding: 100px 0 0 0;
+  padding: 0;
   font-size: 3rem;
   font-weight: 800;
   text-transform: uppercase;
+}
+
+p {
+  font-size: 1.1rem;
+  color: black;
 }
