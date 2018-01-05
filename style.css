@@ -24,7 +24,7 @@ header {
 
 nav {
   height: 100%;
-  width: 60vw;
+  width: 100vw;
   text-align: center;
   margin: 0 auto;
 }
@@ -44,6 +44,13 @@ nav > ul > li > a {
   color: white;
   weight: bold;
   padding: 0 25px;
+  opacity: 1;
+  transition: 0.3s all;
+
+}
+
+nav > ul > li > a:hover {
+  opacity: 0.6;
 }
 
 #logo {
