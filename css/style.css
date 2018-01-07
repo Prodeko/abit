@@ -1,0 +1,277 @@
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+/* HEADER */
+header {
+  margin-top: -120px;
+  position: fixed;
+  width: 100vw;
+  height: 150px;
+  background-color: white;
+  text-align: center;
+  z-index: 9999;
+  background-image: url('../img/background-1080p.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+nav {
+  height: 100%;
+  width: 100vw;
+  text-align: center;
+  margin: 0 auto;
+}
+nav > ul {
+  list-style-type: none;
+  margin: 3 auto;
+  padding: 0;
+}
+nav > ul > li {
+  display: inline;
+}
+nav > ul > li > a {
+  text-decoration: none;
+  color: white;
+  weight: bold;
+  padding: 0 25px;
+  opacity: 1;
+  transition: 0.3s all;
+}
+nav > ul > li > a:hover {
+  opacity: 0.6;
+}
+#logo {
+  height: 70px;
+  padding: 10px 0;
+  margin: 0 auto;
+  display: block;
+}
+#arrow {
+  height: 70px;
+  padding: 10px 0;
+  margin: 0 auto;
+  display: block;
+}
+.jumbotron {
+  margin-top: 120px;
+  border-radius: 0px;
+  height: 400px;
+  background-color: grey;
+  margin-bottom: 50px;
+}
+.jumbotron > h1, .jumbotron > p {
+  text-align: center;
+  weight: bold;
+  color: white;
+}
+.jumbotron > h1 {
+  padding-top: 100px;
+}
+
+/* === LEIPÄTEKSTIT === */
+section {
+  width: 60%;
+  margin: 0 auto;
+  text-align: left;
+}
+/* Bold exam dates */
+#section3 > ul > li {
+  font-weight: 600;
+}
+/* a and p tags displayed inline in section section4 */
+#section4 > ul > li > p, a {
+  display: inline;
+}
+hr {
+  width: 40vw;
+  margin: 80px auto;
+}
+/* Grey text */
+p {
+  color: #6d6d6d;
+}
+/* No underline on links, link color pale blue */
+a {
+  color: #5d8edd;
+  text-decoration: none;
+}
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+h5 {
+  color: white;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+/* Underline links on hover */
+#section4 a:hover {
+  text-decoration: underline;
+}
+#container {
+  height: auto;
+  width: 100%;
+  margin-bottom: 50px;
+}
+.img-class {
+  display: block;
+  margin: 0 auto;
+  width: 80vw;
+}
+/* FOOTER */
+footer {
+  width: 100vw;
+  height: auto;
+  background-color: white;
+  text-align: center;
+  background-image: url('../img/background-1080p.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+}
+.social-icons {
+  font-size: 1.5em;
+  color: #448aaf;
+}
+.social-icons ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+.social-icons ul li {
+  padding: 0 15px;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  vertical-align: middle;
+}
+.social-icons ul li a {
+  display: block;
+  font-size: 1.7em;
+  margin: 0 5px;
+  text-decoration: none;
+}
+.social-icons ul li a i {
+  color: white;
+  -webkit-transition: all 0.1s ease-in;
+  -moz-transition: all 0.1s ease-in;
+  -o-transition: all 0.1s ease-in;
+  -ms-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+}
+.social-icons ul li a:hover i {
+  opacity: 0.8;
+}
+.social {
+  width: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+#arrow {
+  position: relative;
+  overflow: hidden;
+  width: 30px;
+  height: 30px;
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+  header {
+    height: 110px;
+  }
+  #logo {
+    height: 40px;
+    padding: 5px 0;
+    margin: 0 auto;
+    display: block;
+  }
+  nav > ul > li > a {
+    padding: 0 10px;
+  }
+  nav > ul {
+    padding: 3px;
+    margin: 0;
+  }
+  h2 {
+    font-size: 1.7rem;
+  }
+  /* Grey text */
+  p {
+    font-size: 0.9rem;
+  }
+  /* No underline on links, link color pale blue */
+  a {
+    font-size: 0.9rem;
+  }
+  section {
+    width: 80%;
+  }
+  .social-icons {
+    font-size: 1.1em;
+  }
+}
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+  #logo {
+    height: 75px;
+    padding: 10px 0;
+    margin: 0 auto;
+    display: block;
+  }
+  nav > ul > li > a {
+    padding: 0 10px;
+  }
+  nav > ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  h2 {
+    font-size: 2.0rem;
+  }
+  /* Grey text */
+  p {
+    font-size: 1.2rem;
+  }
+  /* No underline on links, link color pale blue */
+  a {
+    font-size: 1.2rem;
+  }
+  section {
+    width: 80%;
+  }
+}
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+/* Styles */
+}
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+/* Styles */
+}
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+/* Styles */
+}
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+/* Styles */
+}
