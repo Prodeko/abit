@@ -194,7 +194,8 @@ footer {
 and (min-device-width : 320px)
 and (max-device-width : 480px) {
   header {
-    height: 110px;
+    height: 120px;
+    margin-bottom: 0px;
   }
   #logo {
     height: 40px;
@@ -225,6 +226,11 @@ and (max-device-width : 480px) {
   }
   .social-icons {
     font-size: 1.1em;
+  }
+  }
+  .img-class {
+    width: 100%;
+    margin: 0;
   }
 }
 /* iPads (portrait and landscape) ----------- */
@@ -259,6 +265,10 @@ and (max-device-width : 1024px) {
   }
   section {
     width: 80%;
+  }
+  .img-class {
+    width: 100%;
+    margin: 0;
   }
 }
 /* iPads (landscape) ----------- */
