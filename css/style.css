@@ -64,10 +64,20 @@ nav > ul > li > a:hover {
   background-color: grey;
   margin-bottom: 50px;
 }
-.jumbotron > h1, .jumbotron > p {
+.jumbotron > h1 {
   text-align: center;
   weight: bold;
   color: white;
+  font-size: 2.4em;
+}
+ .jumbotron > p  {
+   text-align: center;
+   weight: bold;
+   color: white;
+   font-size: 1.3em;
+ }
+.jumbotron > h1 {
+  padding-top: 5%;
 }
 .jumbotron {
   background-image: url('../img/fuksit.jpg');
@@ -85,7 +95,7 @@ section {
 #section4 > ul > li {
   font-weight: 600;
 }
-/* a and p tags displayed inline in section section4 */
+/* a and p tags displayed inline in section section5 */
 #section5 > ul > li > p, a {
   display: inline;
 }
@@ -104,7 +114,11 @@ p {
   color: #6d6d6d;
   line-height: 1.5;
 }
-
+.values {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #6d6d6d;
+}
 section > strong {
   font-size: 2.2em;
 }
@@ -146,6 +160,9 @@ h5 {
   float: left;
   width: 200px;
   margin-right: 20px;
+}
+.quote-wrap > * {
+  color: #6d6d6d;
 }
 .quote-wrap {
   height: 300px;
@@ -286,6 +303,7 @@ and (max-device-width : 480px) {
   }
   /* Grey text */
   p {
+    color: #6d6d6d;
     font-size: 0.9rem;
   }
   #jobs > li {
@@ -356,7 +374,7 @@ and (max-device-width : 480px) {
 and (min-device-width : 480px)
 and (max-device-width : 768px) {
   header {
-    height: 90px;
+    height: 120px;
     margin-bottom: 0px;
   }
   #logo {
@@ -373,14 +391,17 @@ and (max-device-width : 768px) {
     margin: 0;
   }
   .jumbotron {
-    margin-top: 90px;
+    margin-top: 80px;
     border-radius: 0px;
     height: 200px;
     background-color: grey;
     margin-bottom: 50px;
   }
+  .quote-wrap > * {
+    font-size: 0.8em;
+  }
   .quote-wrap {
-    height: 300px;
+    height: 350px;
   }
   h2 {
     font-size: 1.3rem;
@@ -406,6 +427,9 @@ and (max-device-width : 768px) {
   #section4 > ul > li {
     font-weight: 600;
     font-size: 0.8em;
+  }
+  #section5 > * {
+    font-size: 0.7em;
   }
   .social-icons {
     font-size: 1.1em;
@@ -477,6 +501,9 @@ and (max-device-width : 1024px) {
     align-items: center;
     justify-content: center;
   }
+  .jumbotron > h1 {
+    padding-top: 10%;
+  }
   h2 {
     font-size: 2.0rem;
   }
@@ -491,6 +518,12 @@ and (max-device-width : 1024px) {
   a {
     font-size: 1.2rem;
   }
+  .quote-wrap {
+    height: 330px;
+    overflow: auto;
+    overflow-y: hidden; // hide vertical
+    overflow-x: hidden; // hide horizontal
+  }
   section {
     width: 80%;
   }
@@ -504,6 +537,11 @@ and (max-device-width : 1024px) {
   .img-class {
     width: 100%;
     margin: 0;
+  }
+  .img-person {
+    float: left;
+    width: 250px;
+    margin-right: 20px;
   }
   #ftr-caption-name {
     display: block;
