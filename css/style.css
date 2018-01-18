@@ -60,7 +60,7 @@ nav > ul > li > a:hover {
 .jumbotron {
   margin-top: 120px;
   border-radius: 0px;
-  height: 400px;
+  height: 800px;
   background-color: grey;
   margin-bottom: 50px;
 }
@@ -72,6 +72,11 @@ nav > ul > li > a:hover {
 .jumbotron > h1 {
   padding-top: 100px;
 }
+.jumbotron {
+  background-image: url('../img/fuksit.jpg');
+  background-position: center;
+  background-size: cover;
+}
 
 /* === LEIPÄTEKSTIT === */
 section {
@@ -80,12 +85,18 @@ section {
   text-align: left;
 }
 /* Bold exam dates */
-#section3 > ul > li {
+#section4 > ul > li {
   font-weight: 600;
 }
 /* a and p tags displayed inline in section section4 */
-#section4 > ul > li > p, a {
+#section5 > ul > li > p, a {
   display: inline;
+}
+.name {
+  margin-bottom: 40px;
+}
+.name-alumn {
+  margin-top: 0px;
 }
 hr {
   width: 40%;
@@ -111,6 +122,7 @@ a {
   text-decoration: none;
 }
 h2 {
+  margin-top: 80px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -120,7 +132,7 @@ h5 {
   margin-bottom: 2px;
 }
 /* Underline links on hover */
-#section4 a:hover {
+#section5 a:hover {
   text-decoration: underline;
 }
 #container {
@@ -131,7 +143,23 @@ h5 {
 .img-class {
   display: block;
   margin: 0 auto;
-  width: 80%;
+  width: 55%;
+}
+.img-person {
+  float: left;
+  width: 200px;
+  margin-right: 20px;
+}
+.quote-wrap {
+  height: 300px;
+  overflow: auto;
+  overflow-y: hidden; // hide vertical
+  overflow-x: hidden; // hide horizontal
+}
+.quote-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
 /* FOOTER */
 footer {
@@ -158,7 +186,6 @@ footer {
   padding: 0 15px;
   display: inline-block;
   zoom: 1;
-  *display: inline;
   vertical-align: middle;
 }
 .social-icons ul li a {
@@ -180,14 +207,56 @@ footer {
 }
 .social {
   width: auto;
-  margin: 0 auto;
   text-align: center;
+  margin: 0 auto;
+}
+.fa-facebook {
+  padding-right: 22px;
 }
 #arrow {
   position: relative;
   overflow: hidden;
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
+}
+#img-footer {
+  border-radius: 50%;
+  width: 50px;
+}
+figure {
+  margin: 0 auto;
+  margin: 110px 0px 0px -35px;
+}
+#ftr-list-main {
+  margin-top: -75px;
+  margin-left: 30px;
+}
+#ftr-caption-name {
+  display: block;
+  font-size: 20px;
+  color: white;
+  margin-top: -24px;
+  weight: bold;
+}
+#ftr-caption-description {
+  display: block;
+  font-size: 15px;
+  color: white;
+  weight: bold;
+}
+.list-horizontal.li {
+  padding: 0px 0;
+}
+.fa-whatsapp {
+  font-size: 0.6em;
+}
+.fa-telegram  {
+  font-size: 0.6em;
+}
+.list-horizontal > * {
+  display: inline-block;
+  overflow: hidden;
+  margin-top: -25px;
 }
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen
@@ -196,6 +265,7 @@ and (max-device-width : 480px) {
   header {
     height: 120px;
     margin-bottom: 0px;
+    font-size: 0.75em;
   }
   #logo {
     height: 40px;
@@ -213,8 +283,15 @@ and (max-device-width : 480px) {
   h2 {
     font-size: 1.7rem;
   }
+  hr {
+    width: 40%;
+    margin: 50px auto;
+  }
   /* Grey text */
   p {
+    font-size: 0.9rem;
+  }
+  #jobs > li {
     font-size: 0.9rem;
   }
   /* No underline on links, link color pale blue */
@@ -224,19 +301,58 @@ and (max-device-width : 480px) {
   section {
     width: 80%;
   }
+  #section4 > ul > li {
+    font-weight: 600;
+    font-size: 0.8em;
+  }
   .social-icons {
     font-size: 1.1em;
-  }
   }
   .img-class {
     width: 100%;
     margin: 0;
+  }
+  .img-person {
+    float: left;
+    margin: 0px 15px 15px 0px;
+    width: 130px;
+  }
+  #ftr-caption-name {
+    display: block;
+    font-size: 16px;
+    color: white;
+    margin-top: -24px;
+    weight: bold;
+  }
+  #ftr-caption-description {
+    display: block;
+    font-size: 10px;
+    color: white;
+    weight: bold;
+  }
+  #ftr-list-main {
+    margin-top: -50px;
+    margin-left: 40px;
+  }
+  #img-footer {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+  figure {
+    margin: 0 auto;
+    margin: 80px 0px 0px -40px;
   }
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen
 and (min-device-width : 768px)
 and (max-device-width : 1024px) {
+  header {
+    height: 170px;
+    margin-bottom: 0px;
+    font-size: 0.75em;
+  }
   #logo {
     height: 75px;
     padding: 10px 0;
@@ -259,6 +375,9 @@ and (max-device-width : 1024px) {
   p {
     font-size: 1.2rem;
   }
+  #jobs > li {
+    font-size: 1.2rem;
+  }
   /* No underline on links, link color pale blue */
   a {
     font-size: 1.2rem;
@@ -266,9 +385,45 @@ and (max-device-width : 1024px) {
   section {
     width: 80%;
   }
+  .social-icons {
+    font-size: 1.6em;
+  }
+  .social {
+      margin-left: 150px;
+      margin-right: 150px;
+  }
   .img-class {
     width: 100%;
     margin: 0;
+  }
+  #ftr-caption-name {
+    display: block;
+    font-size: 20px;
+    color: white;
+    margin-top: -24px;
+    weight: bold;
+  }
+  #ftr-caption-description {
+    display: block;
+    font-size: 15px;
+    color: white;
+    weight: bold;
+  }
+  #ftr-list-main {
+    margin-top: -75px;
+    margin-left: 40px;
+  }
+  #img-footer {
+    border-radius: 50%;
+    width: 53px;
+    height: 53px;
+  }
+  figure {
+    margin: 0 auto;
+    margin: 115px 0px 0px -40px;
+  }
+  .social {
+    margin: 0 auto;
   }
 }
 /* iPads (landscape) ----------- */
