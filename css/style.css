@@ -165,7 +165,7 @@ h5 {
   color: #6d6d6d;
 }
 .quote-wrap {
-  height: 300px;
+  height: 400px;
   overflow: auto;
   overflow-y: hidden; // hide vertical
   overflow-x: hidden; // hide horizontal
@@ -522,7 +522,7 @@ and (max-device-width : 1024px) {
     font-size: 1.2rem;
   }
   .quote-wrap {
-    height: 330px;
+    height: 390px;
     overflow: auto;
     overflow-y: hidden; // hide vertical
     overflow-x: hidden; // hide horizontal
