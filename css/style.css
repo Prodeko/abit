@@ -257,7 +257,7 @@ figure {
   }
   #logo {
     height: 35px;
-    padding: 5px 0;
+    padding: 0;
     display: block;
   }
   nav > ul > li > a {
@@ -350,7 +350,7 @@ figure {
   }
   #logo {
     height: 25px;
-    padding: 2px 0;
+    padding: 0;
     display: block;
   }
   nav > ul > li > a {
@@ -452,7 +452,7 @@ figure {
   }
   #logo {
     height: 75px;
-    padding: 10px 0;
+    padding: 0;
     display: block;
   }
   nav > ul > li > a {
