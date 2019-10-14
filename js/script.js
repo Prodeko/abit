@@ -1,8 +1,14 @@
-$(document).on('click', 'a[href^="#"]', function (event) {
+$(document).on("click", 'a[href^="#"]', function(event) {
   event.preventDefault();
 
-  $('html, body').animate({
-    scrollTop: $($.attr(this, 'href')).offset().top - 150
-  }, 500);
-
+  var divId;
+  $(".nav-link").click(function() {
+    divId = $(this).attr("href");
+    $("html, body").animate(
+      {
+        scrollTop: $(divId).offset().top - 54
+      },
+      100
+    );
+  });
 });
